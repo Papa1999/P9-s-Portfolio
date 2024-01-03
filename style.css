@@ -288,6 +288,7 @@ footer{
     #Profil{
         flex-direction: column;
         gap: 0rem;
+        margin: 0vh auto;
     }
 
     #pic_container img{
