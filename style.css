@@ -288,6 +288,8 @@ footer{
     #Profil{
         flex-direction: column;
         gap: 0rem;
+        height: 60vh;
+      
     }
 
     #pic_container img{
@@ -302,6 +304,7 @@ footer{
     /* Skills's Section */
     #Compétences{
         width: fit-content;
+        height: 60vh;
     }
 
 
@@ -309,6 +312,10 @@ footer{
     .language{
        grid-template-columns: 1fr;
        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+
+    #Contact{
+    height: 40vh;
     }
     
     
