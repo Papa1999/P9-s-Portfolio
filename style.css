@@ -328,6 +328,7 @@ footer{
     /* Profil's section */
     #Profil{
         flex-direction: column;
+        height: 70vh;
         gap: 0rem; 
     }
 
@@ -343,7 +344,7 @@ footer{
     /* Skills's Section */
     #Compétences{
         width: fit-content;
-        height: 80vh;
+        height: 75vh;
     }
 
     .language{
@@ -359,10 +360,11 @@ footer{
     /* Project Section */
     
     #projets{
+        display: flex;
         flex-direction: column;
-        height: 75vh;
+        /* height: 70vh; */
         gap: 10px;
-        margin: 2vh auto 10vh;
+        margin: 5vh auto 10vh;
     }
     
     #projets div{
