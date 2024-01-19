@@ -208,10 +208,9 @@ a:hover{
 #projets{
     display: flex;
     justify-content: space-around;
-    height: 65vh;
+    height: 70vh;
     width: 80%;
     margin: 0px auto 15vh; 
-    /* padding: 0px 0px 40px 0px ; */
 }
 
 #projets div{
@@ -231,7 +230,7 @@ a:hover{
 }
 
 #projets div img{
-    height: 75%;
+    height: 70%;
     filter: grayscale(100%);
     border-radius: 20px;
 }
@@ -240,7 +239,6 @@ a:hover{
     width: 30%;
     margin:0px auto;
     font-size: 1rem;
-
 }
 
 
@@ -320,15 +318,17 @@ footer{
     h1{
         text-align: center;
     }
+
+    ul{
+        gap: 0.5rem;
+    }
     
     
     
     /* Profil's section */
     #Profil{
         flex-direction: column;
-        gap: 0rem;
-        height: 60vh;
-      
+        gap: 0rem; 
     }
 
     #pic_container img{
@@ -343,10 +343,8 @@ footer{
     /* Skills's Section */
     #Compétences{
         width: fit-content;
-        height: 60vh;
+        height: 80vh;
     }
-
-
 
     .language{
        grid-template-columns: 1fr;
@@ -357,7 +355,29 @@ footer{
     height: 40vh;
     }
     
+
+    /* Project Section */
     
+    #projets{
+        flex-direction: column;
+        height: 75vh;
+        gap: 10px;
+        margin: 2vh auto 10vh;
+    }
+    
+    #projets div{
+        height:80% ;
+    }
+
+    #projets div a{
+        font-size: 0.9rem;
+    }
+
+
+    /* Contact Section */
+    #Contact{
+        height: 60vh;
+    }
     
 
 }
