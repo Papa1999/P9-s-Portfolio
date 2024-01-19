@@ -30,7 +30,7 @@ body{
     padding-top: 10px;
 }
 
-#second, #third{
+#second, #fourth{
     padding: 50px;
 }
 
@@ -362,7 +362,7 @@ footer{
     #projets{
         display: flex;
         flex-direction: column;
-        /* height: 70vh; */
+        height: 90vh;
         gap: 10px;
         margin: 5vh auto 10vh;
     }
