@@ -26,13 +26,7 @@ body{
     font-weight: 600;
 }
 
-#first{
-    padding-top: 10px;
-}
 
-#second, #third, #fourth{
-    padding: 50px;
-}
 
 a{
     color: black;
@@ -108,6 +102,9 @@ li{
 
 
                 /* Profil's Section*/
+#first{
+    padding-top: 10px;
+}
 
 #Profil{
     width: 50%;
@@ -130,6 +127,7 @@ li{
 #Photo_de_profil{
     width: 100%;
     border-radius: 50%;
+    box-shadow: 0px 0px 25px black;
 }
 
 
@@ -150,10 +148,15 @@ li{
 
 
                 /* Section de Compétences  */
+
+#second{
+   margin: 50px;
+}
+
 #Compétences{
     height: 70vh;
     width: 50%;
-    margin:auto auto ;
+    margin:0px auto ;
     display: flex;
     justify-content: center;
     padding-bottom: 10vh;
@@ -206,6 +209,10 @@ li{
 
                     /* Section de projets */
 
+#third{
+    margin: 50px;
+}
+
 #projets{
     display: flex;
     justify-content: space-around;
@@ -221,8 +228,9 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 2px solid grey;
+    box-shadow: 0px 0px 10px gray;
     border-radius: 30px; 
+    box-sizing: border-box;
 }
 
 #projets div h3{
@@ -234,6 +242,7 @@ li{
     height: 70%;
     filter: grayscale(100%);
     border-radius: 20px;
+    object-fit: cover;
 }
 
 #projets div a{
@@ -250,25 +259,23 @@ li{
 
 
                     /* Section contact */
+
+#fourth{
+    margin: 50px;
+}
+
 #Contact{
-    width: 50%;
-    height: 50vh;
-    margin:10vh auto;
+    width: 60%;
+    height: 70vh;
+    margin: 10vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 div p{
     padding: 15px;  
 }
-
-
-h1[id="third"]{
-    padding-top: 10vh;
-}
-
 
 .mail{
     display: flex;
@@ -276,7 +283,6 @@ h1[id="third"]{
     border-radius: 30px;
     padding: 20px;
 }
-
 
 a[href="mailto:thioubepapamacoumba@gmail.com"]{
     vertical-align: center;
@@ -330,7 +336,8 @@ footer{
     /* Profil's section */
     #Profil{
         flex-direction: column;
-        height: 70vh;
+        height: 75vh;
+        width: 75%;
         gap: 0rem; 
     }
 
@@ -340,12 +347,12 @@ footer{
 
     .cv_github{
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
+        
     }
 
     /* Skills's Section */
     #Compétences{
-        width: fit-content;
         height: 75vh;
     }
 
@@ -384,6 +391,8 @@ footer{
     #Contact{
         height: 60vh;
     }
+
+    
     
 
 }
