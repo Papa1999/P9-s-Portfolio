@@ -367,17 +367,25 @@ footer{
     
 
     /* Project Section */
-    
+    #third{
+        margin: 50px;
+    }
+
     #projets{
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        justify-content: space-between;
+        height: 130vh ;
         gap: 10px;
         margin: 5vh auto 10vh;
     }
     
     #projets div{
-        height:80% ;
+        height:35% ;
+    }
+
+    #projets div img{
+        height: 60%;
     }
 
     #projets div a{
