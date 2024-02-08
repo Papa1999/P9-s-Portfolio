@@ -22,32 +22,16 @@ body{
 
 .subtitle{
     text-align: center;
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: 600;
 }
 
 
-
-a{
-    color: black;
-    text-underline-offset: 0.5rem;
-    font-size: 1.5rem;
-}
-
-a:hover{
-    color:grey;
-    text-underline-offset: 1rem;
-}
-
 .lien:hover{
-    display: inline-block;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border: solid 1px white;
-    border-radius: 25px;
-    padding: 15px;
     font-weight: bold;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.01);
+    transition: all 200ms ease-in-out;
 }
 
 .lien{
@@ -69,55 +53,89 @@ a:hover{
 
 
                     /* Header  */
+
 header{
     height: 20vh;
 }
 
-h1{
-    font-size: 2.5rem;
-}
-
-header, ul{
+nav{
+    position: relative;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-ul{
-    gap: 1rem;
+nav h1{
+    font-size: 35px;
+    padding-left: 20px;
+    cursor: default;
 }
 
-li{
-    list-style-type: none;
+nav .toogle-btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+nav .toogle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
 }
 
 
+nav ul{
+    display: flex;
+}
 
+nav ul li{
+    margin: 20px;
+    list-style: none;
+}
 
-                    
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
 
+nav ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color: grey;
+    transition: color 250ms ease-in-out ;
+}
 
-
-
+.toogle-menu{
+    display: none;
+}
 
 
                 /* Profil's Section*/
-#first{
-    padding-top: 10px;
+
+#first a, #second a, #third a, #fourth a{
+    text-decoration: none;
+    color: black;
 }
+
+
 
 #Profil{
     width: 50%;
-    height: 80vh;
-    display: flex;
-    gap: 5rem;
-    margin: 10vh auto;
-}
-
-#pic_container{
+    height: 70vh;
     display: flex;
     margin: auto;
+    padding-top: 12.5vh;
+    padding-bottom: 12.5vh;
 }
+
 
 .profil_paragraph{
     width: 45%;
@@ -125,9 +143,11 @@ li{
 }
 
 #Photo_de_profil{
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     box-shadow: 0px 0px 25px black;
+    display: block;
+    margin: auto;
 }
 
 
@@ -148,24 +168,22 @@ li{
 
 
                 /* Section de Compétences  */
-
-#second{
-   margin: 50px;
-}
-
-#Compétences{
-    height: 70vh;
+#Competences{
+    height: 75vh;
     width: 50%;
     margin:0px auto ;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10vh;
+    padding-bottom: 12vh;
+    padding-top: 50px;
 }
 
 
 .boite{
+    height: 100%;
     border: 2px solid grey;
     border-radius: 30px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
 }
 
 
@@ -176,23 +194,23 @@ li{
 }
 
 
-.language{
-    height:100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
-}
-
-
 .checkmark{
     display: flex;
+    gap: 0.3em;
 }
 
 
 .web_language{
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.language-niveau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -209,22 +227,18 @@ li{
 
                     /* Section de projets */
 
-#third{
-    margin: 50px;
-}
-
 #projets{
     display: flex;
     justify-content: space-around;
-    height: 70vh;
+    height: 80vh;
     width: 80%;
-    margin: 0px auto 5vh; 
+    margin: 7.5vh auto 7.5vh; 
 }
 
 #projets div{
     padding-left: 10px;
     padding-right: 10px;
-    height: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -235,20 +249,17 @@ li{
 
 #projets div h3{
     text-align: center;
-    padding: 5px; 
 }
 
 #projets div img{
-    height: 70%;
-    filter: grayscale(100%);
     border-radius: 20px;
-    object-fit: cover;
+    display: block;
 }
 
 #projets div a{
     text-align: center;
     width: 35%;
-    margin:0px auto;
+    align-self: center;
     font-size: 0.8rem;
 }
 
@@ -261,33 +272,40 @@ li{
                     /* Section contact */
 
 #fourth{
-    margin: 50px;
+    margin-top: 50px;
 }
 
 #Contact{
     width: 60%;
-    height: 70vh;
+    height: 60vh;
     margin: 10vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div p{
-    padding: 15px;  
-}
-
 .mail{
     display: flex;
+    align-items: center;
     border: grey solid 2px;
     border-radius: 30px;
     padding: 20px;
 }
 
+
 a[href="mailto:thioubepapamacoumba@gmail.com"]{
-    vertical-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px; 
+    padding: 15px;   
 }
 
+.mail a:hover, .mail img:hover + a{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color: gray;
+    transition: all 200ms ease-in-out;
+}
 
 
 
@@ -303,7 +321,26 @@ footer{
 }
 
 .footer{
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.footer li{
+    margin: 20px;
+    list-style: none;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.footer li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color: grey;
 }
 
 
@@ -319,27 +356,95 @@ footer{
 @media screen and (max-width:1200px) {
 
     /* Header */
+
     header{
-        flex-direction: column;
+        height: 10vh;
+    }
+
+    header h1{
+        padding-left: 20px;
     }
     
-    h1{
-        text-align: center;
-    }
 
     ul{
         gap: 0.5rem;
     }
+
+
+    nav h1{
+        font-size: 25px;
+    }
+
+    nav .toogle-btn{
+        display: flex;
+    }
+
+    .open{
+        display: flex !important;
+    }
+
+    .toogle-menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(230, 219, 219, 0.2);
+        color: white;
+    }
+
+    .toogle-menu li{
+        list-style: none;
+        margin: 3px;
+    }
+
+    .toogle-menu li a{
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 500;
+        color: black;
+    }
     
+    nav ul{
+        display: none;
+    }
+    
+    nav ul li{
+        margin: 0px;
+        list-style: none;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
     
     
     /* Profil's section */
-    #Profil{
-        flex-direction: column;
-        height: 75vh;
-        width: 75%;
-        gap: 0rem; 
+    #first a, #second a, #third a, #fourth a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
     }
+
+    #Profil{
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 68vh;
+        width: 75%;
+        gap: 75px; 
+    }
+    
+    #Photo_de_profil{
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 25px black;
+        display: block;
+        margin: auto;
+        
+    }
+
 
     #pic_container img{
         height:100%
@@ -352,40 +457,33 @@ footer{
     }
 
     /* Skills's Section */
-    #Compétences{
+    #Competences{
         height: 75vh;
+        width: 80%;
     }
 
-    .language{
+    .boite{
        grid-template-columns: 1fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr ;
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
     }
 
     #Contact{
-    height: 40vh;
+        height: 40vh;
     }
     
 
     /* Project Section */
-    #third{
-        margin: 50px;
-    }
-
     #projets{
-        display: flex;
-        flex-direction: column;
+        height: 200vh;
+        width: 80%;
+        flex-wrap: wrap;
         justify-content: space-between;
-        height: 130vh ;
-        gap: 10px;
-        margin: 5vh auto 10vh;
+        height: none;
+        gap: 2rem;
     }
     
     #projets div{
-        height:35% ;
-    }
-
-    #projets div img{
-        height: 60%;
+        width: 100%;
     }
 
     #projets div a{
@@ -400,7 +498,17 @@ footer{
         height: 60vh;
     }
 
-    
+    /* Footer section */
+
+    .footer li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    .footer li{
+        margin: 10px;
+    }
     
 
 }
