@@ -96,7 +96,7 @@ nav ul{
 }
 
 nav ul li{
-    margin: 20px;
+    margin: 15px;
     list-style: none;
 }
 
@@ -288,12 +288,12 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     border: grey solid 2px;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 40px;
+    padding: 30px;
 }
 
 
-a[href="mailto:thioubepapamacoumba@gmail.com"]{
+.mail a{
     text-decoration: none;
     color: black;
     font-size: 20px; 
