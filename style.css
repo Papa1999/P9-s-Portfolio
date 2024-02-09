@@ -10,6 +10,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -115,6 +116,10 @@ nav ul li a:hover{
 
 .toogle-menu{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
 }
 
 
@@ -129,25 +134,24 @@ nav ul li a:hover{
 
 #Profil{
     width: 50%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
-    margin: auto;
-    padding-top: 12.5vh;
-    padding-bottom: 12.5vh;
+    margin: 5vh auto 10vh;
 }
 
 
-.profil_paragraph{
-    width: 45%;
-    text-align: center;
+#pic_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #Photo_de_profil{
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
     box-shadow: 0px 0px 25px black;
     display: block;
-    margin: auto;
 }
 
 
@@ -169,11 +173,9 @@ nav ul li a:hover{
 
                 /* Section de Compétences  */
 #Competences{
-    height: 75vh;
+    height: 80vh;
     width: 50%;
-    margin:0px auto ;
-    padding-bottom: 12vh;
-    padding-top: 50px;
+    margin:5vh auto 10vh;
 }
 
 
@@ -276,7 +278,6 @@ nav ul li a:hover{
 }
 
 #Contact{
-    width: 60%;
     height: 60vh;
     margin: 10vh auto;
     display: flex;
@@ -299,6 +300,7 @@ nav ul li a:hover{
     font-size: 20px; 
     padding: 15px;   
 }
+
 
 .mail a:hover, .mail img:hover + a{
     text-decoration: underline;
@@ -385,11 +387,7 @@ footer{
 
     .toogle-menu{
         display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: rgba(230, 219, 219, 0.2);
-        color: white;
+        
     }
 
     .toogle-menu li{
@@ -431,7 +429,7 @@ footer{
         padding-bottom: 15vh;
         flex-direction: column;
         justify-content: space-around;
-        height: 68vh;
+        height: 90vh;
         width: 75%;
         gap: 75px; 
     }
@@ -441,14 +439,8 @@ footer{
         border-radius: 50%;
         box-shadow: 0px 0px 25px black;
         display: block;
-        margin: auto;
-        
     }
 
-
-    #pic_container img{
-        height:100%
-    }
 
     .cv_github{
         flex-direction: row;
@@ -458,7 +450,7 @@ footer{
 
     /* Skills's Section */
     #Competences{
-        height: 75vh;
+        height: 80vh;
         width: 80%;
     }
 
@@ -469,6 +461,7 @@ footer{
 
     #Contact{
         height: 40vh;
+        /* width: 40%; */
     }
     
 
@@ -496,7 +489,12 @@ footer{
     /* Contact Section */
     #Contact{
         height: 60vh;
+    }   
+    
+    .mail{
+        flex-direction: column;
     }
+
 
     /* Footer section */
 
